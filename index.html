@@ -38,7 +38,9 @@
           </div>
           <div class="flex items-center gap-2">
             <img class="w-6 h-6" src="assets/coin.png" alt="Coin" />
-            <span class="opacity-70 font-semibold">5500 BDT</span>
+            <p class="opacity-70 font-semibold">
+              <span id="current-balance">5500</span> BDT
+            </p>
           </div>
         </nav>
       </section>
@@ -68,7 +70,7 @@
         <div class="md:ml-6 mt-4 md:mt-0 w-full space-y-8">
           <div class="flex items-center bg-gray-200 p-2 rounded-md w-32">
             <img class="w-6 h-6" src="assets/coin.png" alt="Coin icon" />
-            <span class="ml-2 text-lg">0 BDT</span>
+            <p class="ml-2 text-lg"><span id="collect-money">0</span> BDT</p>
           </div>
           <h2 class="font-semibold text-2xl mt-4">
             Donate for Flood at Noakhali, Bangladesh
@@ -82,11 +84,13 @@
             need.
           </p>
           <input
+            id="card-1-input-number"
             class="mt-4 border-2 rounded-lg p-3 w-full"
             type="text"
             placeholder="Write Donation Amount"
           />
           <button
+            id="card-1-btn"
             class="w-full font-semibold bg-[#B4F461] py-2 px-4 rounded-lg mt-3"
           >
             Donate Now
@@ -174,8 +178,35 @@
           </button>
         </div>
       </div>
+
+      <!-- Successfully Messages Section-->
+      <div
+        id="successfully-messages"
+        class="hidden fixed left-5 top-44 md:left-[525px] bg-opacity-50"
+      >
+        <div class="bg-white w-96 rounded-lg p-8 text-center">
+          <h2 class="text-3xl font-bold text-gray-800">Congrats!</h2>
+          <div class="my-4">
+            <img
+              src="assets/coin.png"
+              alt="Success Icon"
+              class="w-12 mx-auto"
+            />
+          </div>
+          <p class="text-lg font-medium text-gray-700">
+            You Have Donated for Humankind
+          </p>
+          <p class="text-xl font-semibold mt-2 text-green-600">Successfully</p>
+
+          <button id="close-btn" class="mt-8 px-6 py-2 bg-gray-200 font-semibold rounded-lg">
+            Close Confirmation
+          </button>
+        </div>
+      </div>
     </main>
 
+    <script src="./js/utilities.js"></script>
     <script src="./js/blog.js"></script>
+    <script src="/js/donate.js"></script>
   </body>
 </html>
