@@ -11,14 +11,9 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        font-family: "Lexend", sans-serif;
-      }
-    </style>
   </head>
-  <body>
-    <!-- Header Section-->
+  <body style="font-family: 'Lexend', sans-serif">
+    <!-- Header Section Start Here-->
     <header class="backdrop-blur bg-transparent sticky top-0">
       <section class="bg-[#F9F7F3] pt-4 pb-8">
         <nav class="w-11/12 mx-auto flex justify-between items-center text-xl">
@@ -29,15 +24,11 @@
             Blog
           </button>
           <div class="flex items-center gap-2">
-            <img
-              class="w-9 h-9"
-              src="assets/logo.png"
-              alt="Donate Bangladesh"
-            />
+            <img class="w-9 h-9" src="assets/logo.png" alt="" />
             <span class="hidden md:block font-semibold">Donate Bangladesh</span>
           </div>
           <div class="flex items-center gap-2">
-            <img class="w-6 h-6" src="assets/coin.png" alt="Coin" />
+            <img class="w-6 h-6" src="assets/coin.png" alt="" />
             <p class="opacity-70 font-semibold">
               <span id="current-balance">5500</span> BDT
             </p>
@@ -55,21 +46,19 @@
         </button>
       </div>
     </header>
+    <!-- Header Section End Here-->
 
-    <!-- Main Section -->
+    <!-- Main Section Start Here-->
     <main class="mt-8 mb-11 space-y-8 w-11/12 mx-auto">
       <!-- Card 1 -->
       <div
         class="flex flex-col md:flex-row items-start bg-white shadow-lg border p-6 rounded-lg"
       >
-        <img
-          src="assets/noakhali.png"
-          alt="Flood in Noakhali"
-          class="md:w-[50%] rounded-lg"
-        />
+        <img src="assets/noakhali.png" alt="" class="md:w-[50%] rounded-lg" />
+        <!-- Text Section -->
         <div class="md:ml-6 mt-4 md:mt-0 w-full space-y-8">
           <div class="flex items-center bg-gray-200 p-2 rounded-md w-32">
-            <img class="w-6 h-6" src="assets/coin.png" alt="Coin icon" />
+            <img class="w-6 h-6" src="assets/coin.png" alt="" />
             <p class="ml-2 text-lg">
               <span id="noakhali-collect-money">0</span> BDT
             </p>
@@ -104,14 +93,11 @@
       <div
         class="flex flex-col md:flex-row items-start bg-white shadow-lg border p-6 rounded-lg"
       >
-        <img
-          src="assets/feni.png"
-          alt="Flood Relief in Feni"
-          class="md:w-[50%] rounded-lg"
-        />
+        <img src="assets/feni.png" alt="" class="md:w-[50%] rounded-lg" />
+        <!-- Text Section -->
         <div class="md:ml-6 mt-4 md:mt-0 w-full space-y-9">
           <div class="flex items-center bg-gray-200 p-2 rounded-md w-32">
-            <img class="w-6 h-6" src="assets/coin.png" alt="Coin icon" />
+            <img class="w-6 h-6" src="assets/coin.png" alt="" />
             <p class="ml-2 text-lg">
               <span id="feni-collect-money">600</span> BDT
             </p>
@@ -150,12 +136,13 @@
       >
         <img
           src="assets/quota-protest.png"
-          alt="Aid for Injured in Quota Movement"
+          alt=""
           class="md:w-[50%] rounded-lg"
         />
+        <!-- Text Section -->
         <div class="md:ml-6 mt-4 md:mt-0 w-full space-y-9">
           <div class="flex items-center bg-gray-200 p-2 rounded-md w-36">
-            <img class="w-6 h-6" src="assets/coin.png" alt="Coin icon" />
+            <img class="w-6 h-6" src="assets/coin.png" alt="" />
             <p class="ml-2 text-lg">
               <span id="quota-collect-money">2400</span> BDT
             </p>
@@ -175,7 +162,7 @@
             their time of need.
           </p>
           <input
-          id="card-3-input-number"
+            id="card-3-input-number"
             class="mt-4 border-2 rounded-lg p-3 w-full"
             type="text"
             placeholder="Write Donation Amount"
@@ -197,11 +184,7 @@
         <div class="bg-white w-96 rounded-lg p-8 text-center">
           <h2 class="text-3xl font-bold text-gray-800">Congrats!</h2>
           <div class="my-4">
-            <img
-              src="assets/coin.png"
-              alt="Success Icon"
-              class="w-12 mx-auto"
-            />
+            <img src="assets/coin.png" alt="" class="w-12 mx-auto" />
           </div>
           <p class="text-lg font-medium text-gray-700">
             You Have Donated for Humankind
@@ -217,6 +200,7 @@
         </div>
       </div>
     </main>
+    <!-- Main Section End Here-->
 
     <script src="./js/utilities.js"></script>
     <script src="./js/blog.js"></script>

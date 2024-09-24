@@ -1,4 +1,4 @@
-//Card 1
+//Card 1 Event Listener:
 document.getElementById("card-1-btn").addEventListener("click", function () {
   const amount = inputValueNumber("card-1-input-number");
 
@@ -33,7 +33,7 @@ document.getElementById("card-1-btn").addEventListener("click", function () {
   }
 });
 
-//Card 2
+//Card 2 Event Listener:
 document.getElementById("card-2-btn").addEventListener("click", function () {
   const amount = inputValueNumber("card-2-input-number");
 
@@ -49,6 +49,41 @@ document.getElementById("card-2-btn").addEventListener("click", function () {
 
     const total = donateMoney + amount;
     document.getElementById("feni-collect-money").innerText = total;
+
+    const remainingBalance = currentBalance - amount;
+    document.getElementById("current-balance").innerText = remainingBalance;
+
+    const successfullyMessages = document.getElementById(
+      "successfully-messages"
+    );
+    successfullyMessages.classList.remove("hidden");
+    document.getElementById("close-btn").classList.remove("hidden");
+
+    document.getElementById("close-btn").addEventListener("click", function () {
+      successfullyMessages.classList.add("hidden");
+      document.getElementById("close-btn").classList.add("hidden");
+    });
+  } else {
+    alert("Please enter a valid number.");
+  }
+});
+
+//Card 3 Event Listener:
+document.getElementById("card-3-btn").addEventListener("click", function () {
+  const amount = inputValueNumber("card-3-input-number");
+
+  if (!isNaN(amount) && amount > 0) {
+    const donateMoney = innerTextNumber("quota-collect-money");
+
+    const currentBalance = innerTextNumber("current-balance");
+
+    if (amount > currentBalance) {
+      alert("Insufficient balance!");
+      return;
+    }
+
+    const total = donateMoney + amount;
+    document.getElementById("quota-collect-money").innerText = total;
 
     const remainingBalance = currentBalance - amount;
     document.getElementById("current-balance").innerText = remainingBalance;
