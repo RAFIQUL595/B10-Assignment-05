@@ -14,3 +14,12 @@ function innerTextNumber(id) {
   const finalInnerText = parseFloat(innerTextNumber);
   return finalInnerText;
 }
+
+// Class Remove && add Share:
+function showSectionById(id) {
+  document.getElementById("main-section").classList.add("hidden");
+  document.getElementById("btn-show-history").classList.add("hidden");
+
+  // Show Section
+  document.getElementById(id).classList.remove("hidden");
+}
